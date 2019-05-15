@@ -20,7 +20,7 @@ sniffer.setfilter('ip src host 221.192.237.140')
 
 ```
 语法：	 |Protocol	|Direction  |Host(s)   |Value  |Logical Operations  |Other expression
-例子：	 |tcp	 	|dst	 	|10.1.1.1  |80	   |and	 	            |tcp dst 10.2.2.2 3128
+例子：	 |tcp	    	|dst        |10.1.1.1  |80     |and                 |tcp dst 10.2.2.2 3128
 
 Protocol（协议）:
 可能的值: ether, fddi, ip, arp, rarp, decnet, lat, sca, moprc, mopdl, tcp and udp.
