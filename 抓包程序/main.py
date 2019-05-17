@@ -7,6 +7,6 @@ import os
 
 # create a sniffer
 sniffer = pcap.pcap(name=None, promisc=True, immediate=True)
-sniffer.setfilter('ip src host 221.192.237.140')
+# sniffer.setfilter('tcp port 80')
 print_packets(sniffer)
 

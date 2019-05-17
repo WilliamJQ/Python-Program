@@ -52,6 +52,9 @@ def print_packets(pcap):
         # Now unpack the data within the Ethernet frame (the IP packet)
         # Pulling out src, dst, length, fragment info, TTL, and Protocol
         ip = eth.data
+        # help(eth)
+
+
 
         # Pull out fragment information (flags and offset all packed into off field, so use bitmasks)
         do_not_fragment = bool(ip.off & dpkt.ip.IP_DF)
